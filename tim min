@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[200][200];
+    int m,n;
+    int min=a[0][0];
+    double sum;
+
+    printf("so dong = ");
+    scanf("%d",&m);
+    printf("so cot = ");
+    scanf("%d",&n);
+    printf("nhap mang \n");
+
+    for(int i=1;i<=m;i++){
+        for(int j=1;j<=n;j++){
+        	printf("nhap vao phan tu a[%d,%d] = ",i,j);
+        	scanf("%d",&a[i][j]);
+        }
+    }
+    
+    printf("==================\n");
+    printf("mang da nhap \n ");
+    
+    for(int i=1;i<=m;i++){
+        for(int j=1;j<=n;j++){
+           printf("a[%d,%d]= %d\t",i,j,a[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=m;i++){
+        for(int j=1;j<=n;j++){
+            sum+=a[i][j];
+           
+        }
+    }
+    
+    printf("tong = %f\n", sum);
+    
+	for(int i=1;i<=m;i++) {
+		for(int j=1;j<=n;j++) {
+			if (min>a[i][j]) {
+			    min=a[i][j];
+				
+			}
+		}
+	}
+	printf("min = %d", min);
+
+    return 0;
+}
