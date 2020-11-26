@@ -38,20 +38,19 @@ int main()
     printf("tong = %f",sum);
     printf("trung binh cong = %f",sum/(m*n));
 	
+    // tim gia tri lon nhat cua hang cuoi
 	
-	  // tim gia tri lon nhat cua hang cuoi
+    printf("\n");
 	
-	  printf("\n");
-	
-	  int tong=0;
-	  for(int i=1;i<=m;i++) {
-		  for(int j=1;j<=n;j++) {
-			  if (i == m && max < a[i][j]) {
-			      max=a[i][j];
+     int tong=0;
+     for(int i=1;i<=m;i++) {
+	 for(int j=1;j<=n;j++) {
+	     if (i == m && max < a[i][j]) {
+	          max=a[i][j];
 				
-			  }
-		  }
-	  }
+	     }
+         }	
+      }
 	
 	  printf("max = %d",max);
     printf("k = ");
