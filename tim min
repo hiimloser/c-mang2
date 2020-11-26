@@ -4,7 +4,7 @@ int main()
 {
     int a[200][200];
     int m,n;
-    int min=a[0][0];
+    int min;
     double sum;
 
     printf("so dong = ");
